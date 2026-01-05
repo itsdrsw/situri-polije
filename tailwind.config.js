@@ -14,6 +14,7 @@ export default {
         extend: {
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
+                zain: ["Zain", "sans-serif"],
                 gatuzo: ["Gatuzo", "sans-serif"],
                 gatuzoRegular: ["Gatuzo Regular", "sans-serif"],
             },
