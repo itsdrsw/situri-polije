@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    @apply bg-gray-200;
+    @apply font-sans;
+}
+
+body::-webkit-scrollbar {
+    width: 8px; /* tebal scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #e5e7eb; /* warna track (abu-abu terang) */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00d084, #61ce70);
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00b070, #00945b);
+}
+/* Untuk Firefox */
+html {
+    scrollbar-width: 10px; /* "auto" | "thin" | "none" */
+    scrollbar-color: #00d084 #e5e7eb; /* thumb, track */
+}
+@font-face {
+    font-family: "Gatuzo";
+    src: url("../fonts/Gatuzo.ttf") format("truetype");
+    font-weight: 600;
+    font-style: bold;
+}
+@font-face {
+    font-family: "Gatuzo Regular";
+    src: url("../fonts/Gatuzoreguler.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
