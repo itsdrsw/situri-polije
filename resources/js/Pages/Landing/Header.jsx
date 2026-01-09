@@ -72,14 +72,14 @@ const Header = () => {
                     {!isLoggedIn ? (
                         <button
                             onClick={() => router.visit("/login")}
-                            className="flex items-center gap-2 bg-[#00D084] text-white px-5 py-2 rounded-2xl font-semibold hover:bg-[#007F5B]"
+                            className="flex items-center gap-2 bg-[#00D084] text-white px-5 py-2 rounded-2xl font-extrabold transition duration-200 hover:bg-[#007F5B] hover:scale-110"
                         >
                             Login <FaArrowRightToBracket />
                         </button>
                     ) : (
                         <button
                             onClick={handleLogout}
-                            className="flex items-center gap-2 bg-red-500 text-white px-5 py-2 rounded-2xl font-semibold hover:bg-red-700"
+                            className="flex items-center gap-2 bg-red-500 text-white px-5 py-2 rounded-2xl font-extrabold transition duration-200 hover:bg-red-700 hover:scale-110"
                         >
                             Logout <FaArrowRightFromBracket />
                         </button>
@@ -108,6 +108,21 @@ const Header = () => {
                             {link.label}
                         </Link>
                     ))}
+                    {!isLoggedIn ? (
+                        <button
+                            onClick={() => router.visit("/login")}
+                            className="bg-[#007F5B] text-white w-2/3 py-2 rounded-xl font-bold transition duration-200 hover:bg-[#007F5B] hover:scale-110"
+                        >
+                            Login
+                        </button>
+                    ) : (
+                        <button
+                            onClick={handleLogout}
+                            className="bg-red-500 text-white w-2/3 py-2 rounded-xl font-bold transition duration-200 hover:bg-red-700 hover:scale-110"
+                        >
+                            Logout
+                        </button>
+                    )}
                 </div>
             )}
         </header>
