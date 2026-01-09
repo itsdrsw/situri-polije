@@ -4,6 +4,9 @@ import { Head } from "@inertiajs/react";
 import LandingLayout from "@/Layouts/LandingLayout";
 
 import Hero from "@/Pages/Landing/Hero";
+import Dampak from "@/Pages/Landing/Dampak";
+import Fitur from "@/Pages/Landing/Fitur";
+import AlurKerja from "@/Pages/Landing/AlurKerja";
 import FAQ from "@/Pages/Landing/FAQ";
 
 export default function Index() {
@@ -16,7 +19,21 @@ export default function Index() {
                     <Hero />
                 </div>
             </section>
-
+            <section id="home" className="section-wrapper mt-6 mx-4">
+                <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-md p-6 md:p-12">
+                    <Dampak />
+                </div>
+            </section>
+            <section id="home" className="section-wrapper mt-6 mx-4">
+                <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-md p-6 md:p-12">
+                    <Fitur />
+                </div>
+            </section>
+            <section id="home" className="section-wrapper mt-6 mx-4">
+                <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-md p-6 md:p-12">
+                    <AlurKerja />
+                </div>
+            </section>
             <section id="faq" className="section-wrapper mt-6 mx-4 mb-10">
                 <div className="bg-white/70 backdrop-blur-md rounded-3xl shadow-md p-6 md:p-12">
                     <FAQ />
