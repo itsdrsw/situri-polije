@@ -27,9 +27,9 @@ export default function Kontak() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                             {/* EMAIL */}
                             <div className="group bg-gradient-to-br from-[#61CE70] to-[#00D084] backdrop-blur rounded-2xl p-6 shadow-sm text-center border-blue-100 transform transition-all duration-300 ease-out hover:scale-105 hover:shadow-xl hover:from-white/60">
-                                <p className="font-bold text-lg md:text-xl text-white mb-1 transition-colors duration-300 group-hover:text-[#0D8A8C]">
+                                <h2 className="font-bold text-lg md:text-xl text-white mb-1 transition-colors duration-300 group-hover:text-[#0D8A8C]">
                                     Email
-                                </p>
+                                </h2>
                                 <p className="text-gray-700">
                                     support@situri.id
                                 </p>
