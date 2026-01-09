@@ -12,28 +12,36 @@ import {
 const faqData = {
     Umum: [
         {
-            question: "Apa itu Sistem Deteksi Dini TBC?",
-            answer: "Situri adalah platform berbasis teknologi yang membantu mendeteksi risiko Tuberkulosis secara dini guna mendukung penanganan medis yang lebih cepat.",
+            question: "Apa itu Situri?",
+            answer: "Situri adalah sebuah platform inovatif yang menggunakan teknologi AI untuk menganalisis data kesehatan dan memberikan deteksi dini risiko penyakit Tuberkulosis (TBC), membantu intervensi medis yang lebih cepat dan efektif.",
         },
         {
             question: "Siapa saja yang bisa menggunakan sistem ini?",
-            answer: "Sistem ini dapat digunakan oleh masyarakat umum untuk skrining awal serta oleh tenaga medis sebagai alat bantu pendukung.",
+            answer: "Sistem ini dirancang untuk digunakan oleh tenaga medis profesional, fasilitas kesehatan, serta individu yang ingin melakukan skrining awal. Namun, hasil dari sistem ini tidak menggantikan diagnosis medis profesional.",
+        },
+        {
+            question: "Apakah sistem ini sudah teruji secara klinis?",
+            answer: "Ya, sistem kami telah melalui uji klinis yang ketat dan menunjukkan akurasi hingga 94% dalam mendeteksi tanda-tanda awal TBC. Kami terus memperbarui model AI kami dengan data terbaru untuk meningkatkan performa.",
         },
     ],
     Teknis: [
         {
             question: "Bagaimana cara kerja sistem deteksi ini?",
-            answer: "Sistem menggunakan algoritma machine learning yang menganalisis data gejala dan faktor pendukung untuk mengidentifikasi potensi risiko TBC.",
+            answer: "Sistem kami menggunakan algoritma machine learning yang dilatih dengan ribuan data citra medis (seperti rontgen dada) dan data klinis lainnya. Algoritma ini dapat mengidentifikasi pola-pola yang sering dikaitkan dengan TBC.",
         },
         {
-            question: "Apakah data pengguna aman?",
-            answer: "Ya. Data pengguna dijaga kerahasiaannya dan hanya digunakan untuk keperluan analisis sistem.",
+            question: "Apakah data saya aman?",
+            answer: "Tentu. Kami menerapkan standar keamanan dan privasi data tertinggi. Semua data dienkripsi dan dianonimkan untuk melindungi privasi Anda. Kami patuh pada regulasi privasi data yang berlaku.",
+        },
+        {
+            question: "Berapa lama waktu yang dibutuhkan untuk analisis?",
+            answer: "Analisis biasanya memakan waktu 2-5 menit tergantung pada kompleksitas data dan beban server. Untuk citra medis seperti rontgen, analisis dapat diselesaikan dalam waktu kurang dari 3 menit.",
         },
     ],
     "Akun & Langganan": [
         {
             question: "Apakah layanan ini berbayar?",
-            answer: "Situri menyediakan versi gratis dan pengembangan layanan lanjutan untuk fasilitas kesehatan.",
+            answer: "Tersedia versi gratis dan paket berlangganan untuk fasilitas kesehatan.",
         },
     ],
 };
@@ -78,10 +86,10 @@ const FAQ = () => {
                 transition={{ duration: 0.6 }}
                 className="text-center"
             >
-                <h2 className="font-gatuzo text-3xl md:text-4xl lg:text-5xl font-black text-[#00d082]">
+                <h2 className="font-gatuzo mt-2 md:mt-4 text-3xl md:text-4xl lg:text-5xl font-black text-[#00d082]">
                     Pertanyaan yang Sering Diajukan
                 </h2>
-                <p className="mt-4 text-[#0D8A8C] text-lg md:text-xl">
+                <p className="mt-4 text-gray-600 text-lg md:text-xl">
                     Informasi seputar sistem deteksi dini Tuberkulosis (Situri)
                 </p>
             </motion.div>
@@ -140,7 +148,7 @@ const FAQ = () => {
                                 }
                                 className="w-full flex justify-between items-center p-5 text-left"
                             >
-                                <span className="font-bold text-lg text-[#0D8A8C]">
+                                <span className="font-bold text-lg text-gray-800">
                                     {faq.question}
                                 </span>
 
@@ -168,7 +176,7 @@ const FAQ = () => {
                                         transition={{ duration: 0.35 }}
                                         className="overflow-hidden"
                                     >
-                                        <div className="px-6 pb-6 text-gray-700 leading-relaxed">
+                                        <div className="px-6 pb-6 text-gray-600 text-lg leading-relaxed">
                                             {faq.answer}
                                         </div>
                                     </motion.div>
@@ -187,18 +195,21 @@ const FAQ = () => {
                 transition={{ duration: 0.5 }}
                 className="max-w-4xl mx-auto space-y-4 bg-gradient-to-r from-[#007F5B] to-[#00D084] text-white rounded-3xl p-10 text-center shadow-xl"
             >
-                <FaHeadset className="text-3xl mx-auto mb-4" />
+                <div className="inline-flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full bg-white/20 mb-4">
+                    <FaHeadset className="text-3xl text-white" />
+                </div>
+
                 <h3 className="text-3xl md:text-3xl font-extrabold">
                     Butuh Bantuan Lebih Lanjut?
                 </h3>
-                <p className="mt-2 opacity-90 font-bold">
+                <p className="mt-2 opacity-90 font-bold md:text-lg">
                     Tim kami siap membantu Anda kapan saja
                 </p>
 
                 <motion.button
                     whileHover={{ scale: 1.07 }}
                     whileTap={{ scale: 0.95 }}
-                    className="mt-6 px-8 py-3 bg-white text-[#007F5B] font-extrabold text-lg rounded-full shadow-lg"
+                    className="mt-6 px-8 py-3 bg-white text-[#007F5B] font-extrabold text-lg md:text-xl rounded-full shadow-lg"
                 >
                     Hubungi Kami
                 </motion.button>
