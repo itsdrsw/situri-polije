@@ -6,11 +6,11 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row pt-10 pb-16 md:pt-24 md:pb-24 items-center gap-12">
             {/* Text */}
             <div className="flex-1 text-center lg:text-left md:mx-8">
-                <h1 className="font-gatuzo text-3xl md:text-5xl lg:text-6xl font-black text-[#00d082] mb-6 leading-tight">
+                <h1 className="font-gatuzo text-3xl md:text-5xl lg:text-6xl font-black text-[#00d082] mb-6 leading-normal">
                     Sistem Deteksi Dini Penyakit Tuberkulosis
                 </h1>
 
-                <p className="font-zain md:text-2xl text-[#0D8A8C] mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                <p className="font-zain md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                     Deteksi lebih awal, hidup lebih sehat. <br />
                     Cegah TB sejak dini dengan Situri.
                 </p>
